@@ -1,0 +1,149 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #f5efe6; /* Soft beige */
+    color: #3e2f25; /* Dark brown text */
+}
+
+/* Navbar */
+.navbar {
+    padding: 22px;
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #e8dfd3; /* Light warm beige */
+    border-bottom: 1px solid #d6c7b8;
+}
+
+/* Dashboard Layout */
+.dashboard {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 50px;
+    flex-wrap: wrap;
+}
+
+/* Cards */
+.card {
+    background-color: #fffaf3; /* Cream */
+    padding: 28px;
+    border-radius: 14px;
+    width: 300px;
+    box-shadow: 0px 8px 25px rgba(120, 95, 70, 0.15);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+.card h2 {
+    margin-top: 0;
+    font-weight: 600;
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 12px 0;
+    border-radius: 10px;
+    border: 1px solid #d8cfc3;
+    background-color: #fdf8f2;
+    font-size: 14px;
+    outline: none;
+    transition: 0.2s;
+}
+
+input:focus {
+    border-color: #8b6f57;
+}
+
+/* Button */
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #8b6f57; /* Mocha brown */
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #6f5643; /* Darker brown */
+}
+
+/* Total Amount Styling */
+#total {
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+    color: #5c4333;
+}
+.reset-btn {
+    margin-top: 10px;
+    background-color: #b04a4a;
+}
+
+.reset-btn:hover {
+    background-color: #8a3535;
+}
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+button {
+    transition: 0.2s ease;
+}
+
+button:hover {
+    opacity: 0.8;
+}
+
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 220px;
+    height: 100%;
+    background: #e8dfd3;
+    padding: 20px;
+    transition: right 0.3s ease;
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.menu-icon {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    background: #1e1e1e;
+    color: white;
+}
+
+.dark-mode .card {
+    background: #2c2c2c;
+}
+
+.dark-mode .side-menu {
+    background: #333;
+}
